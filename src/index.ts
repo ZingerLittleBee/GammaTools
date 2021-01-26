@@ -4,6 +4,8 @@
  * @date 2021/1/25
 */
 
+import { Stack } from './data-structure/Stack'
+
 /**
  * 获取随机布尔值
  * @returns {boolean}
@@ -50,7 +52,7 @@ const toFixed = (n: number, fixed: number): number => ~~(Math.pow(10, fixed) * n
  * 判断当前用户是否为苹果设备
  * `navigator.platform` 输出平台信息
  */
-const isAppleDevice = /Mac|ipod|iphone|ipad/.test(navigator.platform)
+const isAppleDevice = !typeof window ?? /Mac|ipod|iphone|ipad/.test(navigator.platform)
 
 /**
  * 滚动到页面顶部
@@ -88,5 +90,6 @@ export {
     goToTop,
     average,
     celsiusToFahrenheit,
-    fahrenheitToCelsius
+    fahrenheitToCelsius,
+    Stack
 }

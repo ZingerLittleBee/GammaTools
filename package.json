@@ -1,19 +1,31 @@
 {
   "name": "gammatools",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Tools for JavaScript",
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "release": "tsc && npm publish"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZingerLittleBee/GammaTools.git"
   },
+  "keywords": [
+    "ts",
+    "tools"
+  ],
   "author": "ZingerLittleBee",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ZingerLittleBee/GammaTools/issues"
   },
-  "homepage": "https://github.com/ZingerLittleBee/GammaTools#readme"
+  "homepage": "https://github.com/ZingerLittleBee/GammaTools#readme",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
 }
